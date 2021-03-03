@@ -1,0 +1,31 @@
+.card {
+  background: #43cea2;
+  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+  background: linear-gradient(to right, #185a9d, #43cea2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s;
+  border-radius: 50%;
+  border: none;
+
+  img {
+    opacity: 0;
+    width: 100%;
+    transition: all 1.5s;
+  }
+
+  &.rotate {
+    transform: rotateY(180deg);
+    img {
+      opacity: 1;
+    }
+  }
+
+  &.inactive {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
