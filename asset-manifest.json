@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-game/static/css/main.fe106aca.chunk.css",
+    "main.js": "/react-game/static/js/main.a7169e2c.chunk.js",
+    "main.js.map": "/react-game/static/js/main.a7169e2c.chunk.js.map",
+    "runtime-main.js": "/react-game/static/js/runtime-main.a8de5e2f.js",
+    "runtime-main.js.map": "/react-game/static/js/runtime-main.a8de5e2f.js.map",
+    "static/js/2.b5690718.chunk.js": "/react-game/static/js/2.b5690718.chunk.js",
+    "static/js/2.b5690718.chunk.js.map": "/react-game/static/js/2.b5690718.chunk.js.map",
+    "index.html": "/react-game/index.html",
+    "static/css/main.fe106aca.chunk.css.map": "/react-game/static/css/main.fe106aca.chunk.css.map",
+    "static/js/2.b5690718.chunk.js.LICENSE.txt": "/react-game/static/js/2.b5690718.chunk.js.LICENSE.txt",
+    "static/media/angry.13956aa7.svg": "/react-game/static/media/angry.13956aa7.svg",
+    "static/media/confused.3241caad.svg": "/react-game/static/media/confused.3241caad.svg",
+    "static/media/dissapointment.23a77820.svg": "/react-game/static/media/dissapointment.23a77820.svg",
+    "static/media/love.6cc3d3e6.svg": "/react-game/static/media/love.6cc3d3e6.svg",
+    "static/media/sad.022c0a5e.svg": "/react-game/static/media/sad.022c0a5e.svg",
+    "static/media/scared.3df3180a.svg": "/react-game/static/media/scared.3df3180a.svg",
+    "static/media/sleeping.dda4d9c5.svg": "/react-game/static/media/sleeping.dda4d9c5.svg",
+    "static/media/smile.7ccc3c5f.svg": "/react-game/static/media/smile.7ccc3c5f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8de5e2f.js",
+    "static/js/2.b5690718.chunk.js",
+    "static/css/main.fe106aca.chunk.css",
+    "static/js/main.a7169e2c.chunk.js"
+  ]
+}
