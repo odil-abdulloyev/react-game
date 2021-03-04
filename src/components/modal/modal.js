@@ -1,9 +1,8 @@
 import React from 'react';
 import './modal.scss';
+import Form from '../form/form';
 
 export default function Modal({ title, score, isOpen }) {
-  const handleSubmit = () => {};
-
   return isOpen ? (
     <div className='modal' tabIndex='-1'>
       <div className='modal-dialog modal-dialog-centered ld ld-bounce-in'>
@@ -15,14 +14,7 @@ export default function Modal({ title, score, isOpen }) {
             <p className='fs-4'>Your score is {score}</p>
           </div>
           <div className='modal-footer'>
-            <form onSubmit={handleSubmit}>
-              <div className='mb-3'>
-                <input type='text' placeholder='Enter your name' className='form-control' />
-              </div>
-              <button type='submit' className='btn btn-primary'>
-                Save
-              </button>
-            </form>
+            <Form score={score} />
           </div>
         </div>
       </div>

@@ -68,7 +68,11 @@ export default class GameField extends Component {
             <Card label={emoji.label} icon={emoji.icon} handleTurn={this.handleTurn} key={i} />
           ))}
 
-          <Modal title='You Win!' score={this.state.score} isOpen={this.state.modalIsOpen} />
+          <Modal
+            title='Congratulations!'
+            score={this.state.score}
+            isOpen={this.state.modalIsOpen}
+          />
         </div>
       </div>
     );
