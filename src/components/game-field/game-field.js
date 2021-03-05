@@ -11,12 +11,19 @@ export default class GameField extends Component {
       firstTurnedCard: null,
       secondTurnedCard: null,
       guessed: 0,
-      cardsCount: 16,
       turns: 0,
       modalIsOpen: false,
       score: 30,
     };
   }
+
+  getClass = (cardsCount) => {
+    const countToClass = {
+      4: 's4',
+      8: 's8',
+    };
+    return countToClass[cardsCount];
+  };
 
   increment = (value) => {
     this.setState((prevState) => ({ [value]: prevState[value] + 1 }));
@@ -30,7 +37,7 @@ export default class GameField extends Component {
     this.setState({ modalIsOpen: true });
   };
 
-  endOfGame = () => this.state.guessed > 0 && this.state.guessed === this.state.cardsCount / 2;
+  endOfGame = () => this.state.guessed > 0 && this.state.guessed === this.props.cardsCount ** 2 / 2;
 
   handleTurn = (card) => {
     if (!this.state.firstTurnedCard) {
@@ -63,7 +70,7 @@ export default class GameField extends Component {
     return (
       <div className='game-field-container'>
         <ScoreBox score={this.state.score} turns={this.state.turns} />
-        <div className='game-field'>
+        <div className={'game-field ' + this.getClass(this.props.cardsCount)}>
           {this.props.emojis.map((emoji, i) => (
             <Card label={emoji.label} icon={emoji.icon} handleTurn={this.handleTurn} key={i} />
           ))}

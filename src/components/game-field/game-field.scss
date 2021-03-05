@@ -1,11 +1,19 @@
+.s4 {
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: repeat(4, 23%);
+}
+
+.s8 {
+  grid-template-columns: repeat(8, 10.5%);
+  grid-template-rows: repeat(8, 10.5%);
+}
+
 .game-field-container {
   width: 480px;
   margin: 0 auto;
 
   .game-field {
     display: grid;
-    grid-template-columns: repeat(4, 23%);
-    grid-template-rows: repeat(4, 23%);
     grid-gap: 2%;
   }
 }
